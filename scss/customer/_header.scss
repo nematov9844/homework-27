@@ -185,7 +185,7 @@ header{
     @media (max-width:576px) {
         header{
            .navbar{
-           
+            
             .logo a{
               font-size: 25px ;
             }
@@ -197,3 +197,24 @@ header{
     
 }
     }
+    @media (max-width:365px) {
+        header{
+           .navbar{
+            .nav-action.auth{
+                .nav-sign{
+                    top: 40px;
+                    left: 10%;
+                   
+                }
+            .logo a{
+              font-size: 35px ;
+            }
+            .nav-item.toggle{
+                padding: 20px 30px;
+                width: 50%;
+           }
+        }
+    
+}
+    }
+}

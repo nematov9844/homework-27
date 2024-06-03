@@ -234,6 +234,19 @@ header .navbar .nav-action .toggle-bar {
     width: 150px;
   }
 }
+@media (max-width: 365px) {
+  header .navbar .nav-action.auth .nav-sign {
+    top: 40px;
+    left: 10%;
+  }
+  header .navbar .nav-action.auth .logo a {
+    font-size: 35px;
+  }
+  header .navbar .nav-action.auth .nav-item.toggle {
+    padding: 20px 30px;
+    width: 50%;
+  }
+}
 .hero {
   width: 100%;
   display: flex;
