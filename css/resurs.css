@@ -252,7 +252,21 @@ header .navbar .nav-action .toggle-bar {
   header .navbar .nav-action.auth .nav-sign {
     display: flex;
     top: 40px;
-    left: 25px;
+    left: 16%;
+    flex-direction: column;
+  }
+  header .navbar .nav-btn-left {
+    padding: 4px 11px;
+    background: transparent;
+    color: inherit;
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+  header .navbar .nav-btn-right {
+    padding: 4px 11px;
+    background-color: rgb(2, 137, 122);
+    color: white;
+    border-radius: 4px;
   }
 }
 .hero {

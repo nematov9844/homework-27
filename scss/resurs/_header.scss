@@ -210,10 +210,25 @@ header{
             .nav-sign{
                 display: flex;
                 top: 40px;
-                left: 25px;
+                left: 16%;
+                flex-direction: column;
                
             }
 
+        }
+        
+        .nav-btn-left{
+            padding: 4px 11px;
+            background: transparent;
+            color: inherit;
+            border: 1px solid white;
+            border-radius: 4px;
+        }
+        .nav-btn-right{
+            padding: 4px 11px;
+            background-color:  rgba(2, 137, 122, 1);
+            color: white;
+            border-radius: 4px;
         }
 }
     }
