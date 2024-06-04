@@ -181,14 +181,17 @@ header .navbar .nav-action .toggle-bar {
     flex-direction: column;
     justify-content: center;
     display: flex;
-    width: 25%;
+    width: 50%;
     height: 100vh;
     background-color: rgba(2, 137, 121, 0.452);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
     font-size: 17px;
     padding-bottom: 10px;
     height: 100vh;
     gap: 30px;
     transition: all 1s;
+    z-index: 99;
   }
   header .navbar .nav-item .nav-list .toggle-bar {
     background: transparent;
@@ -198,10 +201,12 @@ header .navbar .nav-action .toggle-bar {
   }
   header .navbar .nav-item.toggle {
     left: 0;
+    z-index: 99;
   }
   header .navbar .nav-action.auth .nav-sign {
     top: 40px;
     left: 25px;
+    z-index: 99;
   }
   header .navbar .nav-action .toggle-bar {
     display: block;
@@ -214,12 +219,11 @@ header .navbar .nav-action .toggle-bar {
     top: -100%;
     left: 0;
     display: flex;
-    flex-direction: column;
     gap: 20px;
   }
   header .navbar .nav-action.auth .nav-sign {
     top: 40px;
-    left: 25px;
+    left: 7%;
   }
   header .navbar .logo a {
     font-size: 25px;
@@ -231,7 +235,6 @@ header .navbar .nav-action .toggle-bar {
   }
   header .navbar .nav-item.toggle {
     padding: 20px 40px;
-    width: 150px;
   }
 }
 @media (max-width: 365px) {
@@ -245,6 +248,11 @@ header .navbar .nav-action .toggle-bar {
   header .navbar .nav-action.auth .nav-item.toggle {
     padding: 20px 30px;
     width: 50%;
+  }
+  header .navbar .nav-action.auth .nav-sign {
+    display: flex;
+    top: 40px;
+    left: 25px;
   }
 }
 .hero {
@@ -306,21 +314,25 @@ header .navbar .nav-action .toggle-bar {
 .hero .hero-left .hero-bottom .bottom-left {
   display: flex;
   position: relative;
+  z-index: -1;
 }
 .hero .hero-left .hero-bottom .bottom-left .hero-bottom-img1 {
   position: absolute;
   top: 0;
   left: 15px;
+  z-index: -1;
 }
 .hero .hero-left .hero-bottom .bottom-left .hero-bottom-img2 {
   position: absolute;
   top: 0;
   left: 52px;
+  z-index: -1;
 }
 .hero .hero-left .hero-bottom .bottom-left .hero-bottom-img3 {
   position: absolute;
   top: 0;
   left: 92px;
+  z-index: -1;
 }
 .hero .hero-left .hero-bottom .bottom-right {
   padding-left: 160px;

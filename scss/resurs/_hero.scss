@@ -54,20 +54,26 @@
             .bottom-left{
                 display: flex;
                 position: relative;
+                z-index: -1;
             .hero-bottom-img1{
                     position: absolute;
                     top: 0;
                     left:15px;
+                    z-index: -1;
+
                 }
                 .hero-bottom-img2{
                     position: absolute;
                     top: 0;
                     left: 52px;
+                    z-index: -1;
+
                 }
                 .hero-bottom-img3{
                     position: absolute;
                     top: 0;
                     left: 92px;
+                    z-index: -1;
                 }
             }
             .bottom-right{
