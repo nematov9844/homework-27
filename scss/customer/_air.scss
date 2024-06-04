@@ -1,0 +1,38 @@
+    
+
+.air{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    .air-title{
+     font-size:32px ;
+     font-weight: 700;
+    }
+    .air-all{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        flex-wrap: wrap;
+        .air-card{
+            width: 350px;
+            min-height: 450px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .air-card-img{
+            width: 50%;
+        }
+        .air-card-title{
+            font-size: 24px;
+            font-weight: 500 ;
+        }
+        .air-card-desc{
+         font-size: 18px;
+         font-weight: 400;
+        }
+    }
+}

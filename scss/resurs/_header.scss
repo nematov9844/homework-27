@@ -1,0 +1,220 @@
+
+
+header{
+    color: inherit;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background-color: rgba(83, 83, 83, 0.438);
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        background: transparent;
+        .logo a{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-size: 30px;
+        }
+        .nav-item{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: inherit;
+            .nav-list{
+                font-size: 16px;
+                font-weight: 600;
+                .toggle-bar{
+                   display: none;
+                   box-shadow: none;
+                }
+                
+            }
+        }
+        .nav-btn-left{
+            padding: 8px 22px;
+            background: transparent;
+            color: inherit;
+            border: 1px solid white;
+            border-radius: 4px;
+        }
+        .nav-btn-right{
+            padding: 8px 22px;
+            background-color:  rgba(2, 137, 122, 1);
+            color: white;
+            border-radius: 4px;
+        }
+        .nav-btn-dark{
+            background: transparent;
+            border-radius: 50%;
+            &:hover{
+                box-shadow: 0px 0px 0px 0px ;
+            }
+        }
+        .toggle-bar{
+            background: transparent;
+            border-radius: 50%;
+            font-size: 20px;
+            color: white;
+            &:hover{
+                box-shadow: 0px 0px 0px 0px ;
+            }
+        }
+        // .auth{
+        //     width: 25px;
+        //     background-color: rgba(254, 253, 253, 0.196);
+        //     border-radius: 50%;
+            
+
+        // }
+
+
+            .nav-action{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                .nav-sign{
+                    display: flex;
+                    gap: 20px;
+                }
+                .toggle-bar{
+                    display: none;
+                   }
+            }
+        }
+
+    }
+
+
+
+
+
+@media (max-width:992px) {
+        header{
+           .navbar{
+           
+            .logo a{
+              font-size: 25px ;
+            }
+            .nav-item{
+                position: fixed;
+                top: 0;
+                left: -100%;
+                flex-direction: column;
+                justify-content: center;
+                display: flex;
+                width: 25%;
+                height: 100vh;
+                background-color:  rgba(2, 137, 121, 0.452);
+                font-size: 17px;
+                padding-bottom:10px ;
+                height: 100vh;
+                gap: 30px;
+                transition: all 1s;
+                .nav-list{
+                    .toggle-bar{
+                        background: transparent;
+                        color: white;
+                        font-size: 20px;
+                        display: block;
+                     }
+                }
+             }
+             .nav-item.toggle{
+                left: 0;
+                
+             }
+             .nav-action.auth{
+                .nav-sign{
+                    top: 40px;
+                    left: 25px;
+                   
+                }
+    
+            }
+            
+.nav-action{
+    .toggle-bar{
+        display: block;
+       }
+}
+           }
+        }
+    
+}
+
+@media (max-width:600px) {
+    
+    header{
+       .navbar{
+        .nav-action{
+          .nav-sign{
+            transition: 1s;
+            position: fixed;
+                top: -100%;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            
+          }
+           
+
+        }
+        .nav-action.auth{
+            .nav-sign{
+                top: 40px;
+                left: 25px;
+               
+            }
+
+        }
+        .logo a{
+          font-size: 25px ;
+        }
+        
+         }
+
+
+       }
+    }
+
+
+    
+    @media (max-width:576px) {
+        header{
+           .navbar{
+            
+            .logo a{
+              font-size: 25px ;
+            }
+            .nav-item.toggle{
+                padding: 20px 40px;
+                width: 150px;
+           }
+        }
+    
+}
+    }
+    @media (max-width:365px) {
+        header{
+           .navbar{
+            .nav-action.auth{
+                .nav-sign{
+                    top: 40px;
+                    left: 10%;
+                   
+                }
+            .logo a{
+              font-size: 35px ;
+            }
+            .nav-item.toggle{
+                padding: 20px 30px;
+                width: 50%;
+           }
+        }
+    
+}
+    }
+}

@@ -1,0 +1,37 @@
+.story{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    .story-title{
+        font-size:34px ;
+        font-weight: 700;
+
+    }
+    .story-desc{
+        font-size:16px ;
+        font-weight: 500;
+
+
+    }
+    .story-cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 20px;
+        .story-card{
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 100%;
+            }
+            .story-card-desc{
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    }
+    .story-bottom{
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
